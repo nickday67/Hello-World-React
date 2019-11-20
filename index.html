@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World, React Assignment</title>
+  </head>
+  <body>
+    <div id="application-root"></div>
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/babel-standalone@6/babel.min.js"
+      crossorigin
+    ></script>
+
+    <script type="text/babel">
+      function Nav() {
+        return (
+          <main>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Education</a>
+                </li>
+                <li>
+                  <a href="#">Work</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <header>
+              <h1>Sally Sane Resume </h1>
+            </header>
+            <section class="education">
+              <header>
+                <h2>Education</h2>
+              </header>
+              <ul>
+                <li>University of Central Florida 2019</li>
+              </ul>
+            </section>
+            <section class="work">
+              <header>
+                <h2>Work</h2>
+              </header>
+              <ul>
+                <li>Employment Date: April 2017 - Present</li>
+                <li>Company: SpaceX</li>
+                <li>Job Title: Junior Developer</li>
+                <li>
+                  Accomplishments: Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor provident necessitatibus ducimus culpa
+                  laboriosam ipsum error ullam exercitationem atque minima rerum
+                  tempora perspiciatis, vero dolorum ea eaque blanditiis
+                  deserunt ex?{" "}
+                </li>
+              </ul>
+              <ul>
+                <li>Employment Date: 2015 - 2017</li>
+                <li>Company: Apple </li>
+                <li>Job Title: Genius</li>
+                <li>
+                  Accomplishments: Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Dolor provident necessitatibus ducimus culpa
+                  laboriosam ipsum error ullam exercitationem atque minima rerum
+                  tempora perspiciatis, vero dolorum ea eaque blanditiis
+                  deserunt ex?{" "}
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h2>Contact Info</h2>
+              <div> Name: Sally Sane </div>
+              <div> Phone: 555-123-1337 </div>
+              <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="I Am Sally."/>
+              <div>
+                Email: <a href="mailto:sally.sue@gmail.com">Email Me</a>
+              </div>
+            </section>
+          </main>
+        );
+      }
+      ReactDOM.render(<Nav />, document.querySelector("#application-root"));
+    </script>
+  </body>
+</html>
